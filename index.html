@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shun-Wei Wang — Software Engineer</title>
+<meta name="description" content="Shun-Wei Wang (王舜緯) — senior software engineer working between software and hardware: HMI, production line automation, embedded systems.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <a href="index.html" aria-current="page" data-en="Home" data-zh="首頁">Home</a>
+  <a href="projects.html" data-en="Projects" data-zh="作品">Projects</a>
+  <a href="about.html" data-en="About" data-zh="關於">About</a>
+  <span class="spacer"></span>
+  <button class="lang" id="langBtn" type="button">中文</button>
+</nav>
+
+<header>
+  <span class="badge">
+    <span class="dot"></span>
+    <span data-en="Senior Software Engineer at Weintek" data-zh="現任 威綸通 資深軟體工程師">Senior Software Engineer at Weintek</span>
+  </span>
+
+  <h1>Shun-Wei Wang</h1>
+  <p class="name-zh">王舜緯</p>
+  <p class="role" data-en="Software · Hardware Integration · Embedded Systems" data-zh="軟體 · 軟硬整合 · 嵌入式系統">Software · Hardware Integration · Embedded Systems</p>
+
+  <p class="lede"
+     data-en="I build the software that talks to hardware — HMI, production line automation, and the layers underneath. Twelve years of it, across human-machine interfaces at Weintek, manufacturing systems at Garmin, and Android BSP and server firmware at Insyde."
+     data-zh="我做軟體與硬體之間那一層 — 人機介面、產線自動化，以及底下的系統。做了十二年：威綸通的人機介面、Garmin 的產線系統，以及系微的 Android BSP 與伺服器韌體。">I build the software that talks to hardware — HMI, production line automation, and the layers underneath. Twelve years of it, across human-machine interfaces at Weintek, manufacturing systems at Garmin, and Android BSP and server firmware at Insyde.</p>
+
+  <div class="actions">
+    <a class="btn btn-primary" href="mailto:awe31402@gmail.com" data-en="Email me" data-zh="寄信給我">Email me</a>
+    <a class="btn btn-ghost" href="Shun-Wei-Wang-CV.pdf" data-en="Download CV (PDF)" data-zh="下載履歷 PDF">Download CV (PDF)</a>
+    <a class="btn btn-ghost" href="https://github.com/awe31402">GitHub</a>
+  </div>
+</header>
+
+<section>
+  <h2 data-en="Now" data-zh="現在">Now</h2>
+
+  <div class="job">
+    <div class="job-when">2025 — <span data-en="Now" data-zh="現在">Now</span></div>
+    <div>
+      <h3 class="job-title">
+        <span data-en="Senior Software Engineer" data-zh="資深軟體工程師">Senior Software Engineer</span>
+        <span class="job-where">@ Weintek</span>
+      </h3>
+      <p class="job-place" data-en="New Taipei, Taiwan" data-zh="台灣 · 新北">New Taipei, Taiwan</p>
+      <ul>
+        <li data-en="Developing HMI design software — the tool engineers use to build the screens that run factory equipment." data-zh="開發 HMI 人機介面設計軟體 — 工程師用它做出操作工廠設備的畫面。">Developing HMI design software — the tool engineers use to build the screens that run factory equipment.</li>
+        <li data-en="Working directly with clients on feature customization and debugging." data-zh="直接與客戶合作，處理功能客製化與問題排查。">Working directly with clients on feature customization and debugging.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="section-note" style="margin-top:22px"
+     data-en="Before this: eight years at Garmin building the software that runs and inspects production lines, and four years at Insyde on Android board support packages and server BMC firmware."
+     data-zh="在此之前：Garmin 八年，做驅動與檢測產線的軟體；系微四年，做 Android BSP 與伺服器 BMC 韌體。">Before this: eight years at Garmin building the software that runs and inspects production lines, and four years at Insyde on Android board support packages and server BMC firmware.</p>
+  <p style="margin:0">
+    <a class="card-link" href="about.html" data-en="Full history →" data-zh="完整經歷 →">Full history →</a>
+  </p>
+</section>
+
+<section>
+  <h2 data-en="Selected Work" data-zh="精選">Selected Work</h2>
+  <div class="grid">
+
+    <article class="card">
+      <h3>StockRebalance</h3>
+      <p data-en="A desktop tool that works out exactly how many shares to buy or sell to bring a portfolio back to its target weights. Built on Qt and libyahoofinance, for my own financial planning."
+         data-zh="一個桌面工具，算出要買賣幾股才能把投資組合拉回目標配置。用 Qt 和 libyahoofinance 做的，為了自己的理財規劃。">A desktop tool that works out exactly how many shares to buy or sell to bring a portfolio back to its target weights. Built on Qt and libyahoofinance, for my own financial planning.</p>
+      <div class="tags"><span class="tag">C++</span><span class="tag">Qt</span><span class="tag">Desktop</span></div>
+      <a class="card-link" href="https://github.com/awe31402/StockRebalance">github.com/awe31402/StockRebalance</a>
+    </article>
+
+    <article class="card">
+      <h3>libmodernrobot</h3>
+      <p data-en="A lightweight C++ library for robot arms: the Denavit–Hartenberg model, forward kinematics, and inverse kinematics — small enough to drop into an embedded project."
+         data-zh="一個輕量的 C++ 機械手臂函式庫：D-H 模型、順向運動學、逆向運動學 — 小到可以直接放進嵌入式專案。">A lightweight C++ library for robot arms: the Denavit–Hartenberg model, forward kinematics, and inverse kinematics — small enough to drop into an embedded project.</p>
+      <div class="tags"><span class="tag">C++</span><span class="tag">Kinematics</span><span class="tag">Robotics</span></div>
+      <span class="card-private" data-en="Private repository" data-zh="私有 repo">Private repository</span>
+    </article>
+
+    <article class="card">
+      <h3 data-en="What I am studying now" data-zh="正在鑽研">What I am studying now</h3>
+      <p data-en="Linux kernel internals and edge AI — model quantization, pruning, and getting large models to run on small hardware. Public notes and runnable code."
+         data-zh="Linux 核心內部機制，以及邊緣 AI — 模型量化、剪枝，還有怎麼把大模型塞進小硬體。筆記與可執行的程式碼都公開。">Linux kernel internals and edge AI — model quantization, pruning, and getting large models to run on small hardware. Public notes and runnable code.</p>
+      <div class="tags"><span class="tag">Linux Kernel</span><span class="tag">Edge AI</span></div>
+      <a class="card-link" href="projects.html" data-en="See the notes →" data-zh="看筆記 →">See the notes →</a>
+    </article>
+
+  </div>
+</section>
+
+<footer>
+  <h3 data-en="Let's talk." data-zh="聊聊吧。">Let's talk.</h3>
+  <p data-en="Open to roles in embedded systems, software–hardware integration, and edge AI — in Taiwan or remote."
+     data-zh="目前開放嵌入式系統、軟硬整合、邊緣 AI 相關職缺 — 台灣或遠端皆可。">Open to roles in embedded systems, software–hardware integration, and edge AI — in Taiwan or remote.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="mailto:awe31402@gmail.com">awe31402@gmail.com</a>
+    <a class="btn btn-ghost" href="https://github.com/awe31402">GitHub</a>
+  </div>
+</footer>
+
+<p class="colophon" data-en="Taoyuan, Taiwan · Hand-written HTML and CSS, no framework."
+   data-zh="台灣 桃園 · 手寫 HTML 與 CSS，沒有框架。">Taoyuan, Taiwan · Hand-written HTML and CSS, no framework.</p>
+
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

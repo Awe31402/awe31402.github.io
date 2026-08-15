@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Shun-Wei Wang</title>
+<meta name="description" content="Side projects and ongoing study by Shun-Wei Wang: Qt desktop tools, robot kinematics, Linux kernel internals, and edge AI model optimization.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <a href="index.html" data-en="Home" data-zh="首頁">Home</a>
+  <a href="projects.html" aria-current="page" data-en="Projects" data-zh="作品">Projects</a>
+  <a href="about.html" data-en="About" data-zh="關於">About</a>
+  <span class="spacer"></span>
+  <button class="lang" id="langBtn" type="button">中文</button>
+</nav>
+
+<header>
+  <h1 class="page-title" data-en="Projects" data-zh="作品">Projects</h1>
+  <p class="lede"
+     data-en="Things I built on my own time, and what I am digging into right now."
+     data-zh="自己時間做出來的東西，以及現在正在鑽研的主題。">Things I built on my own time, and what I am digging into right now.</p>
+</header>
+
+<section>
+  <h2 data-en="Built" data-zh="做出來的東西">Built</h2>
+  <div class="grid">
+
+    <article class="card">
+      <h3>StockRebalance</h3>
+      <p data-en="A desktop tool that works out exactly how many shares to buy or sell to bring a portfolio back to its target weights. Live prices come in through libyahoofinance; the interface is Qt. I wrote it because I wanted to rebalance my own holdings without a spreadsheet."
+         data-zh="一個桌面工具，算出要買賣幾股才能把投資組合拉回目標配置。即時報價透過 libyahoofinance 取得，介面用 Qt。當初寫它是因為不想再用試算表管自己的持股。">A desktop tool that works out exactly how many shares to buy or sell to bring a portfolio back to its target weights. Live prices come in through libyahoofinance; the interface is Qt. I wrote it because I wanted to rebalance my own holdings without a spreadsheet.</p>
+      <div class="tags"><span class="tag">C++</span><span class="tag">Qt</span><span class="tag">libyahoofinance</span></div>
+      <a class="card-link" href="https://github.com/awe31402/StockRebalance">github.com/awe31402/StockRebalance</a>
+    </article>
+
+    <article class="card">
+      <h3>libmodernrobot</h3>
+      <p data-en="A lightweight C++ library for robot arm control: the Denavit–Hartenberg parameter model, forward kinematics, and inverse kinematics. Header-light and dependency-free, so it can drop straight into an embedded project rather than pulling in a full robotics stack."
+         data-zh="一個輕量的 C++ 機械手臂函式庫：Denavit–Hartenberg 參數模型、順向運動學、逆向運動學。相依性極少，可以直接放進嵌入式專案，不必背一整套機器人框架。">A lightweight C++ library for robot arm control: the Denavit–Hartenberg parameter model, forward kinematics, and inverse kinematics. Header-light and dependency-free, so it can drop straight into an embedded project rather than pulling in a full robotics stack.</p>
+      <div class="tags"><span class="tag">C++</span><span class="tag">Kinematics</span><span class="tag">Robotics</span></div>
+      <span class="card-private" data-en="Private repository — happy to walk through it" data-zh="私有 repo — 可以另外聊">Private repository — happy to walk through it</span>
+    </article>
+
+  </div>
+</section>
+
+<section>
+  <h2 data-en="Studying" data-zh="正在鑽研">Studying</h2>
+  <p class="section-note"
+     data-en="These are study repositories, not products — notes, exercises, and runnable code from books and courses. I keep them public because how someone learns says as much as what they have shipped."
+     data-zh="這些是學習用的 repo，不是成品 — 是書籍與課程的筆記、練習與可執行程式碼。我把它們公開，因為一個人怎麼學，跟他做過什麼一樣重要。">These are study repositories, not products — notes, exercises, and runnable code from books and courses. I keep them public because how someone learns says as much as what they have shipped.</p>
+
+  <div class="grid">
+
+    <article class="card">
+      <h3>linux-interview</h3>
+      <p data-en="Working notes on Running Linux Kernel, volumes 1 and 2 — 340 questions across processor architecture, ARM64 in the kernel, memory management, process scheduling, concurrency, interrupt handling, and crash analysis. Includes a practical guide to the crash tool: Kdump setup, a command cheat sheet, and eight real debugging walkthroughs."
+         data-zh="《奔跑吧 Linux 內核》卷一、卷二的讀書筆記 — 共 340 題，涵蓋處理器架構、ARM64 在核心中的實作、記憶體管理、行程排程、併發同步、中斷管理與宕機分析。另附 crash 工具實戰指南：Kdump 設定、指令速查表，以及八個實際除錯流程。">Working notes on Running Linux Kernel, volumes 1 and 2 — 340 questions across processor architecture, ARM64 in the kernel, memory management, process scheduling, concurrency, interrupt handling, and crash analysis. Includes a practical guide to the crash tool: Kdump setup, a command cheat sheet, and eight real debugging walkthroughs.</p>
+      <div class="tags"><span class="tag">Linux Kernel</span><span class="tag">ARM64</span><span class="tag">crash</span><span class="tag">Kdump</span></div>
+      <a class="card-link" href="https://github.com/awe31402/linux-interview">github.com/awe31402/linux-interview</a>
+    </article>
+
+    <article class="card">
+      <h3>deep_learning</h3>
+      <p data-en="Where I am pointing my next few years: edge AI and model optimization. Course work from MIT's efficient machine learning material, model lightweighting notebooks, and close readings of the papers underneath — why memory bandwidth, not raw compute, is what actually limits a model on real hardware."
+         data-zh="我接下來幾年想走的方向：邊緣 AI 與模型優化。內容包含 MIT 高效機器學習課程的練習、模型輕量化的筆記本，以及底層論文的精讀 — 為什麼真正卡住模型的是記憶體頻寬，而不是算力。">Where I am pointing my next few years: edge AI and model optimization. Course work from MIT's efficient machine learning material, model lightweighting notebooks, and close readings of the papers underneath — why memory bandwidth, not raw compute, is what actually limits a model on real hardware.</p>
+      <div class="tags"><span class="tag">Edge AI</span><span class="tag">PyTorch</span><span class="tag">Quantization</span><span class="tag">Pruning</span></div>
+      <a class="card-link" href="https://github.com/awe31402/deep_learning">github.com/awe31402/deep_learning</a>
+    </article>
+
+    <article class="card">
+      <h3>model-light-weight-code</h3>
+      <p data-en="Ten chapters of runnable code for shrinking large models and getting them served: quantization and pruning pipelines, ONNX conversion, TFLite on the edge, and FastAPI deployment. Each chapter is set up to actually run — there is a setup script and a verified environment, not just snippets."
+         data-zh="十個章節的可執行程式碼，主題是把大模型縮小並實際部署：量化與剪枝流程、ONNX 轉換、邊緣端 TFLite、以及 FastAPI 服務。每一章都真的跑得起來 — 有安裝腳本與驗證過的環境，不是只有片段。">Ten chapters of runnable code for shrinking large models and getting them served: quantization and pruning pipelines, ONNX conversion, TFLite on the edge, and FastAPI deployment. Each chapter is set up to actually run — there is a setup script and a verified environment, not just snippets.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">ONNX</span><span class="tag">TFLite</span><span class="tag">FastAPI</span></div>
+      <a class="card-link" href="https://github.com/awe31402/model-light-weight-code">github.com/awe31402/model-light-weight-code</a>
+    </article>
+
+  </div>
+</section>
+
+<footer>
+  <h3 data-en="More on GitHub." data-zh="更多在 GitHub。">More on GitHub.</h3>
+  <p data-en="Driver experiments, OP-TEE on RK3399, memory management exercises, and other things in progress."
+     data-zh="驅動程式實驗、RK3399 上的 OP-TEE、記憶體管理練習，以及其他進行中的東西。">Driver experiments, OP-TEE on RK3399, memory management exercises, and other things in progress.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="https://github.com/awe31402">github.com/awe31402</a>
+    <a class="btn btn-ghost" href="mailto:awe31402@gmail.com" data-en="Email me" data-zh="寄信給我">Email me</a>
+  </div>
+</footer>
+
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
