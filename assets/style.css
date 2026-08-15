@@ -285,12 +285,6 @@ h2 {
 
 .card-link:hover { text-decoration: underline; }
 
-.card-private {
-  font-family: var(--mono);
-  font-size: 13px;
-  color: var(--dim);
-}
-
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 
 .tag {
