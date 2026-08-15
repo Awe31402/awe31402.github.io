@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Projects — Shun-Wei Wang</title>
-<meta name="description" content="Side projects and ongoing study by Shun-Wei Wang: Qt desktop tools, robot kinematics, Linux kernel internals, and edge AI model optimization.">
+<meta name="description" content="Side projects, ongoing study and writing by Shun-Wei Wang: Qt desktop tools, robot kinematics, Linux kernel internals, and edge AI model optimization.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -21,13 +21,13 @@
 <header>
   <h1 class="page-title" data-en="Projects" data-zh="作品">Projects</h1>
   <p class="lede"
-     data-en="Things I built on my own time, and what I am digging into right now."
-     data-zh="自己時間做出來的東西，以及現在正在鑽研的主題。">Things I built on my own time, and what I am digging into right now.</p>
+     data-en="Things I built on my own time, what I am digging into right now, and what I wrote down along the way."
+     data-zh="自己時間做出來的東西、現在正在鑽研的主題，以及一路上寫下來的東西。">Things I built on my own time, what I am digging into right now, and what I wrote down along the way.</p>
 </header>
 
 <section>
   <h2 data-en="Built" data-zh="做出來的東西">Built</h2>
-  <div class="grid">
+  <div class="grid grid-2">
 
     <article class="card">
       <h3>StockRebalance</h3>
@@ -35,6 +35,14 @@
          data-zh="一個桌面工具，算出要買賣幾股才能把投資組合拉回目標配置。即時報價透過 libyahoofinance 取得，介面用 Qt。當初寫它是因為不想再用試算表管自己的持股。">A desktop tool that works out exactly how many shares to buy or sell to bring a portfolio back to its target weights. Live prices come in through libyahoofinance; the interface is Qt. I wrote it because I wanted to rebalance my own holdings without a spreadsheet.</p>
       <div class="tags"><span class="tag">C++</span><span class="tag">Qt</span><span class="tag">libyahoofinance</span></div>
       <a class="card-link" href="https://github.com/awe31402/StockRebalance">github.com/awe31402/StockRebalance</a>
+    </article>
+
+    <article class="card">
+      <h3>libmodernrobot</h3>
+      <p data-en="A lightweight C++ library for robot arm control: the Denavit–Hartenberg parameter model, forward kinematics, and inverse kinematics. Header-light and dependency-free, so it can drop straight into an embedded project rather than pulling in a full robotics stack."
+         data-zh="一個輕量的 C++ 機械手臂函式庫：Denavit–Hartenberg 參數模型、順向運動學、逆向運動學。相依性極少，可以直接放進嵌入式專案，不必背一整套機器人框架。">A lightweight C++ library for robot arm control: the Denavit–Hartenberg parameter model, forward kinematics, and inverse kinematics. Header-light and dependency-free, so it can drop straight into an embedded project rather than pulling in a full robotics stack.</p>
+      <div class="tags"><span class="tag">C++</span><span class="tag">Kinematics</span><span class="tag">Robotics</span></div>
+      <a class="card-link" href="https://gitlab.com/awe31402/modern_robotics">gitlab.com/awe31402/modern_robotics</a>
     </article>
 
   </div>
@@ -73,6 +81,36 @@
     </article>
 
   </div>
+</section>
+
+<section>
+  <h2 data-en="Writing" data-zh="文章">Writing</h2>
+  <p class="section-note"
+     data-en="Things I dug into and wrote down, mostly about what the kernel is actually doing underneath."
+     data-zh="研究過並寫下來的東西，大多是關於核心底下到底在做什麼。">Things I dug into and wrote down, mostly about what the kernel is actually doing underneath.</p>
+
+  <ol class="writing">
+    <li>
+      <time datetime="2022-09">2022.09</time>
+      <a href="https://awe31402.github.io/edward_page/kalman_filter/">Derivation of the Kalman Filter</a>
+    </li>
+    <li>
+      <time datetime="2017-07">2017.07</time>
+      <a href="https://hackmd.io/Snqxtl3VTLqafbzidl7LHQ">Cyclictest results for Xenomai3, PREEMPT_RT patched and origin Linux</a>
+    </li>
+    <li>
+      <time datetime="2017-01">2017.01</time>
+      <a href="https://hackmd.io/3YTyaTpRQiexxDKlzGDSlg">A brief overview of Linux mutex implementation for ARMv7 processors</a>
+    </li>
+    <li>
+      <time datetime="2016-05">2016.05</time>
+      <a href="http://linuxperf.blogspot.com/2016/05/zram-flash.html">Performance comparison between ZRAM and SWAP</a>
+    </li>
+    <li>
+      <time datetime="2016-04">2016.04</time>
+      <a href="http://linuxperf.blogspot.com/2016/04/locality.html">How locality of a program affects cache miss rate and performance</a>
+    </li>
+  </ol>
 </section>
 
 <footer>
