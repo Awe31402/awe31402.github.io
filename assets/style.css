@@ -22,6 +22,14 @@
   --wrap: 900px;
 }
 
+/* Japanese kanji differ in shape from Traditional Chinese ones (直, 骨, 每),
+   so the font stack switches with the document language. */
+:root[lang="ja"] {
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP",
+          "Yu Gothic", Meiryo, sans-serif;
+}
+
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -93,19 +101,36 @@ nav a[aria-current="page"] {
 
 nav .spacer { flex: 1; }
 
+/* segmented language switcher */
 .lang {
+  display: inline-flex;
+  gap: 2px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 2px;
+}
+
+.lang button {
   font-family: var(--sans);
   font-size: 13px;
   font-weight: 500;
-  background: var(--card);
-  border: 1px solid var(--line);
+  line-height: 1.5;
+  background: none;
+  border: 0;
   color: var(--dim);
-  padding: 7px 14px;
-  border-radius: 8px;
+  padding: 5px 11px;
+  border-radius: 7px;
   cursor: pointer;
 }
 
-.lang:hover { color: var(--accent); border-color: var(--line-hi); }
+.lang button:hover { color: var(--ink); }
+
+.lang button[aria-pressed="true"] {
+  background: var(--bg);
+  color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
 
 /* ---------- page head ---------- */
 
